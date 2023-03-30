@@ -1,0 +1,149 @@
+/* Кнопка звонка http://fan-kids.ru + http://wordsmall.ru/demo/call/index.html  */
+.wrap-bt {
+    border-radius: 50%;
+    -webkit-animation: email-an linear 1s infinite;
+    animation: email-an linear 1s infinite
+}
+
+@keyframes email-an {
+    0% {
+        box-shadow: 0 8px 10px rgba(249, 92, 24, .3), 0 0 0 0 rgba(249, 92, 24, .2), 0 0 0 0 rgba(249, 92, 24, .2)
+    }
+    40% {
+        box-shadow: 0 8px 10px rgba(249, 92, 24, .3), 0 0 0 15px rgba(249, 92, 24, .2), 0 0 0 0 rgba(249, 92, 24, .2)
+    }
+    80% {
+        box-shadow: 0 8px 10px rgba(249, 92, 24, .3), 0 0 0 30px rgba(249, 92, 24, 0), 0 0 0 26.7px rgba(249, 92, 24, .067)
+    }
+    100% {
+        box-shadow: 0 8px 10px rgba(249, 92, 24, .3), 0 0 0 30px rgba(249, 92, 24, 0), 0 0 0 40px rgba(249, 92, 24, 0)
+    }
+}
+
+@keyframes opsimple {
+    0% {
+        opacity: 0;
+        transform: rotate(0)
+    }
+    40% {
+        opacity: 1
+    }
+    80% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(360deg)
+    }
+}
+
+.fafix.fafix-phone {
+    position: relative;
+    top: 2px
+}
+
+@media (min-width: 576px) {
+    .fx-close svg {
+        position: relative;
+        top: -3px
+    }
+}
+
+@media (max-width: 576px) {
+    .fx-close svg {
+        position: relative;
+        top: 3px
+    }
+}
+
+.icons-widget-wrap {
+    position: fixed;
+    right: 5%;
+    bottom: 130px;
+    width: 55px;
+    height: 55px;
+    z-index: 999
+}
+
+.icons-widget-wrap a {
+    z-index: 998;
+    position: absolute
+}
+
+.widget-icon-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    transition: all .45s ease-in-out;
+    box-shadow: 0 0 5px rgb(0 0 0 / 50%)
+}
+
+.is-closed .widget-icon-item {
+    opacity: 0;
+    transition: all .65s ease-in-out
+}
+
+.is-closed .widget-icon-item.is-active {
+    opacity: 1
+}
+
+.widget-icon-item i {
+    font-size: 30px;
+    line-height: 55px;
+    opacity: .95;
+    transition: all .45s ease-in-out;
+    color: #fff
+}
+
+.widget-icon-item:focus i, .widget-icon-item:hover i {
+    color: #fff;
+    opacity: 1
+}
+
+.widget-icon-item-closed {
+    background-color: #fad998
+}
+
+.widget-icon-item.widget-icon-item-closed i, .widget-icon-item.widget-icon-item-closed i:focus, .widget-icon-item.widget-icon-item-closed i:hover {
+    color: #282828
+}
+
+.widget-icon-item-phone {
+    background-color: #03e427
+}
+
+.widget-icon-item-whatsapp {
+    background-color: #43d854
+}
+
+.widget-icon-item-viber {
+    background-color: #7360f2
+}
+
+.widget-icon-item-telegram {
+    background-color: #08c
+}
+
+.widget-icon-item-odnoklassniki {
+    background-color: #ed812b
+}
+
+.widget-icon-item-mail {
+    background-color: #d00000
+}
+
+.widget-icon-item-mail i.fa {
+    line-height: 53px
+}
+
+@media (max-width: 550px) {
+    .icons-widget-wrap {
+        bottom: 5vh;
+    }
+}
